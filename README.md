@@ -20,33 +20,48 @@ Use imwrite(filename, image) to write the image.
 End the program and close the output image windows.
 ## Program:
 ### Developed By:
+U.BHAVYA
 ### Register Number: 
+212220230055
 i) #To Read,display the image
 ```
   import cv2
+  color_img=cv2.imread('berry.jpg',1)
+  cv2.imshow('212220230055,U.BHAVYA',color_img)
+  cv2.waitKey(0)
 
 ```
 ii) #To write the image
 ```
-
-
+  import cv2
+  color_img=cv2.imread('berry.jpg',1)
+  w=cv2.imwrite('1.png',color_img)
+  cv2.imshow('212220230055,U.BHAVYA',color_img)
+  cv2.waitKey(0) 
 
 ```
 iii) #Find the shape of the Image
-```python3
-
-
-
+```
+  import cv2
+  import random
+  color_img=cv2.imread('berry.jpg',1)
+  print(color_img.shape)
+  
 ```
 iv) #To access rows and columns
-
-```python3
-
-
+```
+import cv2
+import random
+color_img=cv2.imread('berry.jpg',1)
+for i in range(100):
+    for j in range(color_img.shape[1]):
+        color_img[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow('212220230055,U.BHAVYA',color_img)
+cv2.waitKey(0)
 
 ```
 v) #To cut and paste portion of image
-```python3
+```
 
 
 
@@ -55,21 +70,25 @@ v) #To cut and paste portion of image
 ## Output:
 
 ### i) Read and display the image
+![output](./static/img/berry 1.jpg)
 
 <br>
 <br>
 
 ### ii)Write the image
+![output](./static/img/berry 2.jpg)
 
 <br>
 <br>
 
 ### iii)Shape of the Image
+![output](./static/img/berry 3.jpg)
 
 <br>
 <br>
 
 ### iv)Access rows and columns
+![output](./static/img/berry 4.jpg)
 <br>
 <br>
 
