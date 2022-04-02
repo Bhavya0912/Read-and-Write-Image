@@ -75,7 +75,7 @@ cv2.waitKey(0)
 ## Output:
 
 ### i) Read and display the image
-![output](./static/img/berry1.jpg)
+![output](./static/img/berry1.png)
 <br>
 <br>
 
