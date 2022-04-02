@@ -25,27 +25,27 @@ U.BHAVYA
 212220230055
 i) #To Read,display the image
 ```
-  import cv2
-  color_img=cv2.imread('berry.jpg',1)
-  cv2.imshow('212220230055,U.BHAVYA',color_img)
-  cv2.waitKey(0)
+import cv2
+color_img=cv2.imread('berry.jpg',1)
+cv2.imshow('212220230055,U.BHAVYA',color_img)
+cv2.waitKey(0)
 
 ```
 ii) #To write the image
 ```
-  import cv2
-  color_img=cv2.imread('berry.jpg',1)
-  w=cv2.imwrite('1.png',color_img)
-  cv2.imshow('212220230055,U.BHAVYA',color_img)
-  cv2.waitKey(0) 
+import cv2
+color_img=cv2.imread('berry.jpg',1)
+w=cv2.imwrite('1.png',color_img)
+cv2.imshow('212220230055,U.BHAVYA',color_img)
+cv2.waitKey(0) 
 
 ```
 iii) #Find the shape of the Image
 ```
-  import cv2
-  import random
-  color_img=cv2.imread('berry.jpg',1)
-  print(color_img.shape)
+import cv2
+import random
+color_img=cv2.imread('berry.jpg',1)
+print(color_img.shape)
   
 ```
 iv) #To access rows and columns
@@ -62,8 +62,12 @@ cv2.waitKey(0)
 ```
 v) #To cut and paste portion of image
 ```
-
-
+import cv2
+color_image=cv2.imread('berry.jpg',-1)
+tag=color_image[300:400,300:400]
+color_image[50:150,50:150]=tag
+cv2.imshow('212220230055,U.BHAVYA',color_image)
+cv2.waitKey(0)
 
 ```
 
@@ -71,19 +75,16 @@ v) #To cut and paste portion of image
 
 ### i) Read and display the image
 ![output](./static/img/berry 1.jpg)
-
 <br>
 <br>
 
 ### ii)Write the image
 ![output](./static/img/berry 2.jpg)
-
 <br>
 <br>
 
 ### iii)Shape of the Image
 ![output](./static/img/berry 3.jpg)
-
 <br>
 <br>
 
@@ -93,6 +94,7 @@ v) #To cut and paste portion of image
 <br>
 
 ### v)Cut and paste portion of image
+![output](./static/img/berry 5.jpg)
 <br>
 <br>
 
